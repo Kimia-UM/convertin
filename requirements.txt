@@ -1,0 +1,18 @@
+# Web framework
+Flask>=3.0.0
+Werkzeug>=3.0.0
+
+# PDF -> Markdown, merge, and PDF/DOCX compression
+pymupdf>=1.24.0
+pymupdf4llm>=0.0.17
+Pillow>=10.0.0
+qrcode[pil]>=7.4.2
+
+# Universal Excel/CSV -> Google Forms builder
+openpyxl>=3.1.5
+
+# Word -> PDF now uses LibreOffice (headless), NOT Microsoft Word.
+# LibreOffice is a system application, installed separately (not via pip):
+#   Windows: winget install TheDocumentFoundation.LibreOffice
+#   macOS:   brew install --cask libreoffice
+#   Linux:   sudo apt install libreoffice

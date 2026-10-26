@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: docforge
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: WEB_CONCURRENCY
+        value: "1"
+      - key: GUNICORN_TIMEOUT
+        value: "300"
+    # Keep Render's default TCP probe: a single synchronous worker can be busy
+    # converting a document for longer than the HTTP health-check deadline.

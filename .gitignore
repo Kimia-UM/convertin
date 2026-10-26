@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+/tmp/
+/output/
+/server_*.txt
+*.log
+.env
+.env.*
+!.env.example
+
+# Local input documents are not application source.
+*.pdf
+*.doc
+*.docx
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+*.tsv
+*.zip
